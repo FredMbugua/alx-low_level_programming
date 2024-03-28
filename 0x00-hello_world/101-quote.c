@@ -14,8 +14,6 @@ Dora Korpar, 2015-10-19";
 
 	write(STDOUT_FILENO, message, sizeof(message));
 
-	fprintf(stderr, "");
-
 	return (1);
 }
 
