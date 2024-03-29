@@ -1,7 +1,9 @@
 #include <stdio.h>
 /**
  * main - Entry point
+ *
  * Description: 'Print numbers base 16'
+ *
  * Return: Always 0
  */
 int main(void)
@@ -20,3 +22,4 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
+
