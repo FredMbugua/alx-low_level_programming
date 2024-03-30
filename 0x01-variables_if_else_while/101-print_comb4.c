@@ -1,9 +1,13 @@
 #include <stdio.h>
+
 /**
  * main -Entry point
+ *
  * Description: 'Print 3 digits'
+ *
  * Return: Always 0
  */
+
 int main(void)
 {
 	int n, m, l;
@@ -31,3 +35,4 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
+
