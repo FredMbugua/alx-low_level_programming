@@ -5,6 +5,7 @@
  * Description: 'Print digit numbers'
  * Return: Always 0
  */
+
 int main(void)
 {
 	int i, j;
@@ -31,3 +32,4 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
+
