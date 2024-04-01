@@ -1,1 +1,1 @@
-0x02. C-functions nested loops
+0x02. C-functions nested loops - Revision
