@@ -1,15 +1,12 @@
-/*
- * File: 101-natural.c
- * Auth: fred
- */
-
 #include <stdio.h>
 
 /**
  * main - Lists all the natural numbers below 1024(excluded)
- * that are mulples of 3 or 5
+ * that are multiples of 3 or 5
+ *
  * Return: Always 0
  */
+
 int main(void)
 {
 	int i, sum = 0;
@@ -24,3 +21,4 @@ int main(void)
 
 	return (0);
 }
+
