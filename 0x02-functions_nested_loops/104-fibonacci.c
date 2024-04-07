@@ -6,7 +6,7 @@
  * Return: (Success)
  */
 
-int main()
+int main(void)
 {
 	unsigned long fib1 = 1, fib2 = 2, next;
 	int count;
@@ -25,6 +25,6 @@ int main()
 
 	printf("\n");
 
-	return 0;
+	return (0);
 }
 
