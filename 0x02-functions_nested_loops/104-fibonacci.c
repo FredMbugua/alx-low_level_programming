@@ -17,7 +17,7 @@ int main(void)
 	{
 	next = fib1 + fib2;
 
-	printf(", %.0Lf", next);
+	printf(", %22.0Lf", next);
 
 	fib1 = fib2;
 	fib2 = next;
