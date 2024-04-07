@@ -6,24 +6,25 @@
  * Return: (Success)
  */
 
-int main() 
+int main()
 {
+	unsigned long fib1 = 1, fib2 = 2, next;
 	int count;
-	unsigned int fib1 = 1, fib2 = 2, next;
 
-	printf("%u, %u", fib1, fib2);
+	printf("%lu, %lu", fib1, fib2);
 
-	for (count = 3; count <= 98; count++) 
+	for (count = 3; count <= 98; count++)
 	{
 	next = fib1 + fib2;
 
-	printf(", %u", next);
+	printf(", %lu", next);
 
 	fib1 = fib2;
 	fib2 = next;
 	}
 
-    printf("\n");
+	printf("\n");
 
-    return 0;
+	return 0;
 }
+
