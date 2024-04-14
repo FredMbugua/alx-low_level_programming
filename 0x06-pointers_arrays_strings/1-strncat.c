@@ -3,6 +3,7 @@
 /**
  * _strncat - concatenate two strings
  * using at most n bytes from src
+ *
  * @dest: input value
  * @src: input value
  * @n: input value
@@ -30,3 +31,4 @@ char *_strncat(char *dest, char *src, int n)
 	dest[i] = '\0';
 	return (dest);
 }
+

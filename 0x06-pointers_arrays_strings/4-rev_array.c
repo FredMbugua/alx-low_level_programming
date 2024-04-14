@@ -2,6 +2,7 @@
 
 /**
  * reverse_array - reverse array of integers
+ *
  * @a: array
  * @n: number of elements of array
  *
@@ -20,3 +21,4 @@ void reverse_array(int *a, int n)
 		a[n] = t;
 	}
 }
+
