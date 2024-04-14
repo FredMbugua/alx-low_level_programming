@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <string.h>
+#include "main.h"
 
 char *infinite_add(char *n1, char *n2, char *r, int size_r) {
     int len1 = strlen(n1);
@@ -23,9 +23,14 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r) {
     }
     
     if (carry) {
-        r[max_len] = carry + '0';
-        return r;
+        if (max_len + 1 <= size_r) {
+            r[max_len] = carry + '0';
+            return r;
+        } else {
+            return 0; // Result cannot be stored in r
+        }
     } else {
         return r + 1; // Return pointer to the start of the result (skip leading zero)
     }
 }
+
