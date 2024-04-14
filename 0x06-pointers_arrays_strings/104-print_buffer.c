@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include <ctype.h>
+#include "main.h"
 
 void print_buffer(char *b, int size) {
     if (size <= 0) {
@@ -13,7 +12,7 @@ void print_buffer(char *b, int size) {
 
         for (j = 0; j < 10; j++) {
             if (i + j < size) {
-                printf("%02x", b[i + j]);
+                printf("%02x", (unsigned char)b[i + j]);
             } else {
                 printf("  ");
             }
@@ -25,10 +24,10 @@ void print_buffer(char *b, int size) {
 
         printf(" ");
         for (j = 0; j < 10 && i + j < size; j++) {
-            printf("%c", isprint(b[i + j]) ? b[i + j] : '.');
+            char c = b[i + j];
+            printf("%c", (c >= 32 && c <= 126) ? c : '.');
         }
 
         printf("\n");
     }
 }
-
