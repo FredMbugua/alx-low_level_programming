@@ -2,9 +2,11 @@
 
 /**
  * main - finds and prints the sum of the even-valued terms
- * foloowed by a new line
+ * followed by a new line
+ *
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
 	int i;
@@ -28,3 +30,4 @@ int main(void)
 
 	return (0);
 }
+
